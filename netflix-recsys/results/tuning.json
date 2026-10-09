@@ -1,0 +1,191 @@
+{
+  "best_weights": {
+    "genre": 0.25,
+    "desc": 0.45,
+    "lsa": 0.05,
+    "cast": 0.2,
+    "director": 0.05
+  },
+  "held_out_best": {
+    "k": 10,
+    "franchise_queries": 353,
+    "franchise_hit@10": 0.8073654390934845,
+    "franchise_recall@10": 0.7246931067044381,
+    "franchise_mrr@10": 0.7253889563379649,
+    "genre_jaccard@10": 0.9024786324786325,
+    "genre_diversity@10": 0.13981757691997343,
+    "same_type@10": 0.9962460197754315,
+    "catalog_coverage": 0.9963130551365845,
+    "boundary_tie_rate": 0.002011060834590246,
+    "franchise_hit@10_tie_best": 0.8073654390934845,
+    "franchise_hit@10_tie_worst": 0.8073654390934845,
+    "franchise_recall@10_tie_best": 0.7246931067044381,
+    "franchise_recall@10_tie_worst": 0.7246931067044381,
+    "franchise_mrr@10_tie_best": 0.7253889563379649,
+    "franchise_mrr@10_tie_worst": 0.7253889563379649
+  },
+  "held_out_default": {
+    "k": 10,
+    "franchise_queries": 353,
+    "franchise_hit@10": 0.7337110481586402,
+    "franchise_recall@10": 0.6396600566572238,
+    "franchise_mrr@10": 0.6004901299518863,
+    "genre_jaccard@10": 0.8281447963800905,
+    "genre_diversity@10": 0.2366469284769939,
+    "same_type@10": 0.9969331322272499,
+    "catalog_coverage": 0.9966482319423496,
+    "boundary_tie_rate": 0.00318417965476789,
+    "franchise_hit@10_tie_best": 0.7337110481586402,
+    "franchise_hit@10_tie_worst": 0.7337110481586402,
+    "franchise_recall@10_tie_best": 0.6396600566572238,
+    "franchise_recall@10_tie_worst": 0.6396600566572238,
+    "franchise_mrr@10_tie_best": 0.6004901299518863,
+    "franchise_mrr@10_tie_worst": 0.6004901299518863
+  },
+  "grid": [
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.35,
+        "lsa": 0.05,
+        "cast": 0.1,
+        "director": 0.05
+      },
+      "tune_mrr": 0.6701226979416891,
+      "tune_hit": 0.7596439169139466,
+      "ties": 0.002849002849002849
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.35,
+        "lsa": 0.05,
+        "cast": 0.2,
+        "director": 0.05
+      },
+      "tune_mrr": 0.7242899533700721,
+      "tune_hit": 0.8011869436201781,
+      "ties": 0.002513826043237808
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.35,
+        "lsa": 0.1,
+        "cast": 0.1,
+        "director": 0.05
+      },
+      "tune_mrr": 0.6593695539541237,
+      "tune_hit": 0.7537091988130564,
+      "ties": 0.002178649237472767
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.35,
+        "lsa": 0.1,
+        "cast": 0.2,
+        "director": 0.05
+      },
+      "tune_mrr": 0.7222622580189346,
+      "tune_hit": 0.8011869436201781,
+      "ties": 0.002178649237472767
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.35,
+        "lsa": 0.2,
+        "cast": 0.1,
+        "director": 0.05
+      },
+      "tune_mrr": 0.6403666807969478,
+      "tune_hit": 0.7507418397626113,
+      "ties": 0.0023462376403552876
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.35,
+        "lsa": 0.2,
+        "cast": 0.2,
+        "director": 0.05
+      },
+      "tune_mrr": 0.7049561961283028,
+      "tune_hit": 0.8011869436201781,
+      "ties": 0.0016758840288252053
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.45,
+        "lsa": 0.05,
+        "cast": 0.1,
+        "director": 0.05
+      },
+      "tune_mrr": 0.6758890301917008,
+      "tune_hit": 0.7655786350148368,
+      "ties": 0.0026814144461203286
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.45,
+        "lsa": 0.05,
+        "cast": 0.2,
+        "director": 0.05
+      },
+      "tune_mrr": 0.7299361782299467,
+      "tune_hit": 0.8100890207715133,
+      "ties": 0.002011060834590246
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.45,
+        "lsa": 0.1,
+        "cast": 0.1,
+        "director": 0.05
+      },
+      "tune_mrr": 0.6691959870001414,
+      "tune_hit": 0.7566765578635015,
+      "ties": 0.0023462376403552876
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.45,
+        "lsa": 0.1,
+        "cast": 0.2,
+        "director": 0.05
+      },
+      "tune_mrr": 0.7279037727850783,
+      "tune_hit": 0.8011869436201781,
+      "ties": 0.0023462376403552876
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.45,
+        "lsa": 0.2,
+        "cast": 0.1,
+        "director": 0.05
+      },
+      "tune_mrr": 0.6438191795016721,
+      "tune_hit": 0.7596439169139466,
+      "ties": 0.0030165912518853697
+    },
+    {
+      "weights": {
+        "genre": 0.25,
+        "desc": 0.45,
+        "lsa": 0.2,
+        "cast": 0.2,
+        "director": 0.05
+      },
+      "tune_mrr": 0.7140690499740945,
+      "tune_hit": 0.8011869436201781,
+      "ties": 0.002849002849002849
+    }
+  ]
+}

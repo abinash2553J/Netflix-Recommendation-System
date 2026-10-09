@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netflix-recsys"
+version = "0.1.0"
+description = "Content-based recommender for Netflix titles: hybrid TF-IDF/LSA features, MMR re-ranking, explanations, offline evaluation, REST API and demo UI."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "nltk",
+  "rapidfuzz",
+]
+
+[project.optional-dependencies]
+serve = ["fastapi", "uvicorn[standard]", "streamlit"]
+dev = ["pytest", "httpx", "fastapi", "uvicorn[standard]", "streamlit", "tabulate"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
