@@ -1,0 +1,42 @@
+name: Python CI
+
+on:
+  push:
+    branches: [main, "deploy/**"]
+    paths:
+      - "netflix-recsys/**"
+      - ".github/workflows/ci.yml"
+      - "requirements.txt"
+  pull_request:
+    paths:
+      - "netflix-recsys/**"
+      - ".github/workflows/ci.yml"
+      - "requirements.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    defaults:
+      run:
+        working-directory: netflix-recsys
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: netflix-recsys/pyproject.toml
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -e ".[dev]"
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Verify Streamlit entry point
+        run: python -m streamlit --version
